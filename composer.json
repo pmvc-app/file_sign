@@ -10,7 +10,7 @@
             "email": "hill@kimo.com"
         }
     ],
-    "require-dev": {
+    "require": {
         "pmvc-plugin/file_list": "*",
         "pmvc-plugin/cmd": "*",
         "pmvc/pmvc": "*"
