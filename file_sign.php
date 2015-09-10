@@ -42,7 +42,6 @@ foreach ($files as $k=>$f) {
     if ($hash) {
         $hash = ','.$hash;
     }
-    $file_path = str_replace($path,'',$f['wholePath']);
-    echo $file_path.$hash."\n";
+    echo $k.$hash."\n";
 }
 
