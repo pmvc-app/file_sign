@@ -1,0 +1,140 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "144c19cf871bf92431f52a62da2a4cfe",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "pmvc-plugin/cmd",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/cmd.git",
+                "reference": "49036e6dff225c23cbae4eee98fcf6ab4ad11f86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/cmd/zipball/49036e6dff225c23cbae4eee98fcf6ab4ad11f86",
+                "reference": "49036e6dff225c23cbae4eee98fcf6ab4ad11f86",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "easy parse command line parameter",
+            "homepage": "https://github.com/pmvc-plugin/cmd",
+            "keywords": [
+                "command line",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2015-08-12 17:55:55"
+        },
+        {
+            "name": "pmvc-plugin/file_list",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc-plugin/file_list.git",
+                "reference": "593c01e2d53ac00c0dcb1926fbdcfcff7c0366e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc-plugin/file_list/zipball/593c01e2d53ac00c0dcb1926fbdcfcff7c0366e8",
+                "reference": "593c01e2d53ac00c0dcb1926fbdcfcff7c0366e8",
+                "shasum": ""
+            },
+            "require": {
+                "pmvc/pmvc": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "A library let you easy get all file in one specific folder",
+            "homepage": "https://github.com/pmvc-plugin/file_list",
+            "keywords": [
+                "file",
+                "plug",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2015-09-10 02:10:25"
+        },
+        {
+            "name": "pmvc/pmvc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmvc/pmvc.git",
+                "reference": "d26230938f67d82ce49dd49d69a5e05b8f46b7bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmvc/pmvc/zipball/d26230938f67d82ce49dd49d69a5e05b8f46b7bc",
+                "reference": "d26230938f67d82ce49dd49d69a5e05b8f46b7bc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PMVC\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hill",
+                    "email": "hill@kimo.com"
+                }
+            ],
+            "description": "The New PHP5.6 MVC framework, conatain double engine and double framework",
+            "keywords": [
+                "framework",
+                "mvc",
+                "phramework",
+                "plug",
+                "plug-in",
+                "pmvc"
+            ],
+            "time": "2015-09-09 13:45:38"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

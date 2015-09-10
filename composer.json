@@ -1,0 +1,19 @@
+{
+    "name": "pmvc-app/file_sign",
+    "description": "sign you files",
+    "type": "project",
+    "keywords": ["sign"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hill",
+            "email": "hill@kimo.com"
+        }
+    ],
+    "require-dev": {
+        "pmvc-plugin/file_list": "*",
+        "pmvc-plugin/cmd": "*",
+        "pmvc/pmvc": "*"
+    },
+    "minimum-stability": "dev"
+}
