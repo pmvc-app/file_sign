@@ -6,11 +6,13 @@
  * #for run
  * ./convmv.php --path=/yourpath --notest
  */
+ini_set("memory_limit","256M");
 include_once('vendor/autoload.php');
 PMVC\Load::plug();
 $params = PMVC\plug('cmd')->commands($argv);
 
 $mypath = $params['path'];
+$exclude = $params['exclude'];
 
 if(is_dir($mypath)){
     $path = $mypath;
@@ -29,7 +31,11 @@ if(empty($pattern)){
 }
 echo "Run in ".$path."\n";
 echo "File pattern: ".$pattern."\n";
-$files = PMVC\plug('file_list',array('hash'=>true))->ls($path,$pattern);
+$files = PMVC\plug('file_list',array(
+        'hash' => true,
+        'prefix' => $path,
+        'exclude' => $exclude
+    ))->ls($path,$pattern);
 ksort($files);
 foreach ($files as $k=>$f) {
     $hash = $f['hash'] ?: '';
