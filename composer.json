@@ -12,7 +12,6 @@
     ],
     "require": {
         "pmvc-plugin/file_list": "*",
-        "pmvc-plugin/cmd": "*",
         "pmvc/pmvc": "*"
     },
     "minimum-stability": "dev"

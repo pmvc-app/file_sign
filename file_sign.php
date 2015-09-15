@@ -9,8 +9,8 @@
 ini_set("memory_limit","256M");
 include_once('vendor/autoload.php');
 PMVC\Load::plug();
-$params = PMVC\plug('cmd')->commands($argv);
 
+$params = getOpt('',array('path:','exclude:'));
 $mypath = $params['path'];
 $exclude = $params['exclude'];
 
