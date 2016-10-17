@@ -25,8 +25,11 @@
    * php composer.phar install
 
 #### 2.2 Or use composer command-line
-   * php composer.phar require pmvc-app/file_sign
- or
-   * composer require pmvc-app/file_sign
-
+```
+php composer.phar require pmvc-app/file_sign
+```
+or
+```
+composer require pmvc-app/file_sign
+```
 
