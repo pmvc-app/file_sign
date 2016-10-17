@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "144c19cf871bf92431f52a62da2a4cfe",
-    "packages": [],
-    "packages-dev": [
+    "hash": "b0a54dbfa1258c8c8f00c6b0f9602b17",
+    "content-hash": "ac49b8fe02139628994d31f4fb7c97f5",
+    "packages": [
         {
-            "name": "pmvc-plugin/cmd",
+            "name": "pmvc-plugin/file_info",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pmvc-plugin/cmd.git",
-                "reference": "49036e6dff225c23cbae4eee98fcf6ab4ad11f86"
+                "url": "https://github.com/pmvc-plugin/file_info.git",
+                "reference": "e0b78031ea30620b98be3425241bd78408c7da44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmvc-plugin/cmd/zipball/49036e6dff225c23cbae4eee98fcf6ab4ad11f86",
-                "reference": "49036e6dff225c23cbae4eee98fcf6ab4ad11f86",
+                "url": "https://api.github.com/repos/pmvc-plugin/file_info/zipball/e0b78031ea30620b98be3425241bd78408c7da44",
+                "reference": "e0b78031ea30620b98be3425241bd78408c7da44",
                 "shasum": ""
             },
             "require": {
@@ -35,14 +35,13 @@
                     "email": "hill@kimo.com"
                 }
             ],
-            "description": "easy parse command line parameter",
-            "homepage": "https://github.com/pmvc-plugin/cmd",
+            "description": "PMVC Plugin for File information",
             "keywords": [
-                "command line",
+                "file",
                 "plug-in",
                 "pmvc"
             ],
-            "time": "2015-08-12 17:55:55"
+            "time": "2016-06-26 10:05:45"
         },
         {
             "name": "pmvc-plugin/file_list",
@@ -50,15 +49,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmvc-plugin/file_list.git",
-                "reference": "593c01e2d53ac00c0dcb1926fbdcfcff7c0366e8"
+                "reference": "87aeaee5d5cebbd27dcdc094a030561ad241dd13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmvc-plugin/file_list/zipball/593c01e2d53ac00c0dcb1926fbdcfcff7c0366e8",
-                "reference": "593c01e2d53ac00c0dcb1926fbdcfcff7c0366e8",
+                "url": "https://api.github.com/repos/pmvc-plugin/file_list/zipball/87aeaee5d5cebbd27dcdc094a030561ad241dd13",
+                "reference": "87aeaee5d5cebbd27dcdc094a030561ad241dd13",
                 "shasum": ""
             },
             "require": {
+                "pmvc-plugin/file_info": "*",
                 "pmvc/pmvc": "*"
             },
             "type": "library",
@@ -80,7 +80,7 @@
                 "plug-in",
                 "pmvc"
             ],
-            "time": "2015-09-10 02:10:25"
+            "time": "2016-04-04 18:39:53"
         },
         {
             "name": "pmvc/pmvc",
@@ -88,12 +88,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmvc/pmvc.git",
-                "reference": "d26230938f67d82ce49dd49d69a5e05b8f46b7bc"
+                "reference": "8f96e474627a18be97a3942283608fa612624f51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmvc/pmvc/zipball/d26230938f67d82ce49dd49d69a5e05b8f46b7bc",
-                "reference": "d26230938f67d82ce49dd49d69a5e05b8f46b7bc",
+                "url": "https://api.github.com/repos/pmvc/pmvc/zipball/8f96e474627a18be97a3942283608fa612624f51",
+                "reference": "8f96e474627a18be97a3942283608fa612624f51",
                 "shasum": ""
             },
             "require": {
@@ -118,7 +118,7 @@
                     "email": "hill@kimo.com"
                 }
             ],
-            "description": "The New PHP5.6 MVC framework, conatain double engine and double framework",
+            "description": "Pure plugin framework (PMVC7), use anything you like. No mvc, http inside.",
             "keywords": [
                 "framework",
                 "mvc",
@@ -127,9 +127,10 @@
                 "plug-in",
                 "pmvc"
             ],
-            "time": "2015-09-09 13:45:38"
+            "time": "2016-08-23 19:33:23"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
