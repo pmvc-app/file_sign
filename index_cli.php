@@ -13,34 +13,22 @@ $b->addAction('index', [
 
 class FileSign extends \PMVC\Action
 {
-    private $_go;
-    private $_log;
-
-    function log()
-    {
-        $data = func_get_args();
-        if ($this->_log) {
-            echo join('',$data)."\n"; 
-        } else {
-            call_user_func_array(
-                [ $this->_go, 'set'],
-                $data
-            );
-        }
-    }
 
     function index($m, $f)
     {
         $path = $f['path'];
         $pattern = $f['pattern'];
         $exclude = $f['exclude']; 
+        $log = $f['log'];
+        \PMVC\plug('view_cli',[
+            'plainText'=>$log
+        ]);
 
-        $this->_go = $m['dump']; 
-        $this->_log = $f['log'];
+        $go = $m['dump']; 
 
-        $this->log('Run: ', $path);
-        $this->log('Pattern: ', $pattern);
-        $this->log('log: ', $this->_log ? 'enable' : 'disable');
+        $go->set('Run', $path);
+        $go->set('Pattern', $pattern);
+        $go->set('Log', $log ? 'enable' : 'disable');
 
         $files = PMVC\plug('file_list', [
                 'hash' => true,
@@ -53,9 +41,9 @@ class FileSign extends \PMVC\Action
             if ($hash) {
                 $hash = ','.$hash;
             }
-            $this->log($k.$hash);
+            $go->set($k.$hash);
         }
-        return $this->_go;
+        return $go;
     }
 }
 

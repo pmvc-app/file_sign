@@ -11,8 +11,11 @@
         }
     ],
     "require": {
-        "pmvc-plugin/file_list": "*",
-        "pmvc/pmvc": "*"
+        "pmvc-plugin/file_list"       : "*",
+        "pmvc-plugin/controller"      : "*",
+        "pmvc-plugin/default_forward" : "*",
+        "pmvc-plugin/dispatcher"      : "*",
+        "pmvc-plugin/view_cli"        : "*"
     },
     "minimum-stability": "dev"
 }
